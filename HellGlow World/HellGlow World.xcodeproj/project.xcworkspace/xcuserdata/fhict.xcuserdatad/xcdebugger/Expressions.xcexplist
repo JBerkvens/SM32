@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HellGlow_World.GlowAct.addRating (HellGlow_World.GlowAct)(Rating : Swift.Int) -&gt; ():GlowAct.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.rating">
+            </PersistentString>
+            <PersistentString
+               value = "ratingCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
