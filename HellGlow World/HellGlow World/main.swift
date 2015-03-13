@@ -8,7 +8,7 @@
 
 import Foundation;
 
-println("Hellglow  World!");
+println("HellGlow  World!");
 
 var testAct: GlowAct;
 testAct = GlowAct(Name: "TestAct", StartTime: "11:00");

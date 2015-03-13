@@ -11,6 +11,7 @@
 		F54791D21AA71D8B00FF3D40 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54791D11AA71D8B00FF3D40 /* City.swift */; };
 		F54791D41AA71E4700FF3D40 /* GlowAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54791D31AA71E4700FF3D40 /* GlowAct.swift */; };
 		F54791D61AA744FB00FF3D40 /* ArtNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54791D51AA744FB00FF3D40 /* ArtNames.swift */; };
+		F565E78D1AA7959C0004BC2C /* IntFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F565E78C1AA7959C0004BC2C /* IntFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		F54791D11AA71D8B00FF3D40 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		F54791D31AA71E4700FF3D40 /* GlowAct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlowAct.swift; path = ../GlowAct.swift; sourceTree = "<group>"; };
 		F54791D51AA744FB00FF3D40 /* ArtNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtNames.swift; sourceTree = "<group>"; };
+		F565E78C1AA7959C0004BC2C /* IntFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				F54791D31AA71E4700FF3D40 /* GlowAct.swift */,
+				F565E78C1AA7959C0004BC2C /* IntFunctions.swift */,
 				F54791C81AA71C9F00FF3D40 /* main.swift */,
 				F54791D11AA71D8B00FF3D40 /* City.swift */,
 				F54791D51AA744FB00FF3D40 /* ArtNames.swift */,
@@ -129,6 +132,7 @@
 			files = (
 				F54791D61AA744FB00FF3D40 /* ArtNames.swift in Sources */,
 				F54791C91AA71C9F00FF3D40 /* main.swift in Sources */,
+				F565E78D1AA7959C0004BC2C /* IntFunctions.swift in Sources */,
 				F54791D21AA71D8B00FF3D40 /* City.swift in Sources */,
 				F54791D41AA71E4700FF3D40 /* GlowAct.swift in Sources */,
 			);
@@ -245,6 +249,7 @@
 				F54791CE1AA71C9F00FF3D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
