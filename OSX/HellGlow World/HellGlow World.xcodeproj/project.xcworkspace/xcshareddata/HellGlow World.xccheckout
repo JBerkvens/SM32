@@ -14,11 +14,11 @@
 		<string>https://github.com/JBerkvens/SM32.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HellGlow World/HellGlow World.xcodeproj</string>
+	<string>OSX/HellGlow World/HellGlow World.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9AF8BA5125708A1C8E76247C3CC5D6846A8B7771</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/JBerkvens/SM32.git</string>

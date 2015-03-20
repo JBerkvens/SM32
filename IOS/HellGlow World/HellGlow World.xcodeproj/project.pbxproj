@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52C729F1ABAE7FD00EDA991 /* PM5544_with_non-PAL_signals.png in Resources */ = {isa = PBXBuildFile; fileRef = F52C72A11ABAE7FD00EDA991 /* PM5544_with_non-PAL_signals.png */; };
+		F52C72A81ABB0A3E00EDA991 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C72A71ABB0A3E00EDA991 /* GeneralViewController.swift */; };
+		F52C72AD1ABB0B7C00EDA991 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C72A91ABB0B7C00EDA991 /* AboutViewController.swift */; };
+		F52C72AE1ABB0B7C00EDA991 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C72AA1ABB0B7C00EDA991 /* DetailsViewController.swift */; };
+		F52C72AF1ABB0B7C00EDA991 /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C72AB1ABB0B7C00EDA991 /* EasterEggViewController.swift */; };
+		F52C72B01ABB0B7C00EDA991 /* MoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C72AC1ABB0B7C00EDA991 /* MoreDetailsViewController.swift */; };
 		F54791E61AA791BC00FF3D40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54791E51AA791BC00FF3D40 /* AppDelegate.swift */; };
-		F54791E81AA791BC00FF3D40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54791E71AA791BC00FF3D40 /* ViewController.swift */; };
 		F54791EB1AA791BC00FF3D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54791E91AA791BC00FF3D40 /* Main.storyboard */; };
 		F54791ED1AA791BC00FF3D40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54791EC1AA791BC00FF3D40 /* Images.xcassets */; };
 		F54791F01AA791BC00FF3D40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54791EE1AA791BC00FF3D40 /* LaunchScreen.xib */; };
@@ -26,10 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F52C72A01ABAE7FD00EDA991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/PM5544_with_non-PAL_signals.png"; sourceTree = "<group>"; };
+		F52C72A21ABAE81300EDA991 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/PM5544_with_non-PAL_signals.png"; sourceTree = "<group>"; };
+		F52C72A71ABB0A3E00EDA991 /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		F52C72A91ABB0B7C00EDA991 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F52C72AA1ABB0B7C00EDA991 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F52C72AB1ABB0B7C00EDA991 /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasterEggViewController.swift; sourceTree = "<group>"; };
+		F52C72AC1ABB0B7C00EDA991 /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailsViewController.swift; sourceTree = "<group>"; };
 		F54791E01AA791BC00FF3D40 /* HellGlow World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HellGlow World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54791E41AA791BC00FF3D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F54791E51AA791BC00FF3D40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
-		F54791E71AA791BC00FF3D40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F54791EA1AA791BC00FF3D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F54791EC1AA791BC00FF3D40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F54791EF1AA791BC00FF3D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,12 +88,17 @@
 		F54791E21AA791BC00FF3D40 /* HellGlow World */ = {
 			isa = PBXGroup;
 			children = (
+				F52C72A91ABB0B7C00EDA991 /* AboutViewController.swift */,
+				F52C72AA1ABB0B7C00EDA991 /* DetailsViewController.swift */,
+				F52C72AB1ABB0B7C00EDA991 /* EasterEggViewController.swift */,
+				F52C72AC1ABB0B7C00EDA991 /* MoreDetailsViewController.swift */,
 				F54791E51AA791BC00FF3D40 /* AppDelegate.swift */,
-				F54791E71AA791BC00FF3D40 /* ViewController.swift */,
 				F54791E91AA791BC00FF3D40 /* Main.storyboard */,
+				F52C72A11ABAE7FD00EDA991 /* PM5544_with_non-PAL_signals.png */,
 				F54791EC1AA791BC00FF3D40 /* Images.xcassets */,
 				F54791EE1AA791BC00FF3D40 /* LaunchScreen.xib */,
 				F54791E31AA791BC00FF3D40 /* Supporting Files */,
+				F52C72A71ABB0A3E00EDA991 /* GeneralViewController.swift */,
 			);
 			path = "HellGlow World";
 			sourceTree = "<group>";
@@ -192,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52C729F1ABAE7FD00EDA991 /* PM5544_with_non-PAL_signals.png in Resources */,
 				F54791EB1AA791BC00FF3D40 /* Main.storyboard in Resources */,
 				F54791F01AA791BC00FF3D40 /* LaunchScreen.xib in Resources */,
 				F54791ED1AA791BC00FF3D40 /* Images.xcassets in Resources */,
@@ -212,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54791E81AA791BC00FF3D40 /* ViewController.swift in Sources */,
+				F52C72B01ABB0B7C00EDA991 /* MoreDetailsViewController.swift in Sources */,
+				F52C72AF1ABB0B7C00EDA991 /* EasterEggViewController.swift in Sources */,
+				F52C72AD1ABB0B7C00EDA991 /* AboutViewController.swift in Sources */,
 				F54791E61AA791BC00FF3D40 /* AppDelegate.swift in Sources */,
+				F52C72A81ABB0A3E00EDA991 /* GeneralViewController.swift in Sources */,
+				F52C72AE1ABB0B7C00EDA991 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +257,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F52C72A11ABAE7FD00EDA991 /* PM5544_with_non-PAL_signals.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52C72A01ABAE7FD00EDA991 /* Base */,
+				F52C72A21ABAE81300EDA991 /* en */,
+			);
+			name = "PM5544_with_non-PAL_signals.png";
+			sourceTree = "<group>";
+		};
 		F54791E91AA791BC00FF3D40 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
