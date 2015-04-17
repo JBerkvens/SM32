@@ -21,7 +21,7 @@ class Encryption {
         string = string.stringByReplacingOccurrencesOfString(" ", withString: "");
         var charArray = Array(string);
         var usedIntegers : [Int] = [];
-        var encrypted = [Character?](count:charArray.count, repeatedValue: nil);
+        var encrypted : [Character] = [];
         var i = 0;
         for c in charArray {
             encrypted[i] = c;
@@ -32,7 +32,7 @@ class Encryption {
         }
         var stringBuilder = "";
         for c in encrypted {
-            stringBuilder.append(c!);
+            stringBuilder.append(c);
         }
         return stringBuilder;
     }
