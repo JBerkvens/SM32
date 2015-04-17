@@ -14,11 +14,13 @@ class FindController: UIViewController {
     @IBOutlet weak var findButton: UIButton!
     @IBOutlet weak var passwordOrErrorLabel: UILabel!
     @IBOutlet weak var copyButton: UIButton!
+    @IBOutlet weak var waitIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad();
         self.passwordOrErrorLabel.hidden = true;
         self.copyButton.hidden = true;
+        self.waitIndicator.hidden = true;
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,10 +28,20 @@ class FindController: UIViewController {
     }
     
     @IBAction func find(sender: AnyObject) {
-        self.passwordOrErrorLabel.text = "nbuiyvktcj32t68gy&*#";
-        self.passwordOrErrorLabel.hidden = false;
-        self.copyButton.hidden = false;
-        UIPasteboard.generalPasteboard().string = self.passwordOrErrorLabel.text;
+        self.waitIndicator.hidden = false;
+        self.waitIndicator.startAnimating();
+        let url = NSURL(string: "http://moridrin.com/ios/PasswordGenerator/getPassword.php?User=mp.berkvens@gmail.com&Name=" + Encryption.encrypt(nameTextField.text));
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in
+            var dataString = NSString(data: data, encoding: NSUTF8StringEncoding) as! String;
+            dataString.substringWithRange(Range<String.Index>(start: advance(dataString.startIndex, 9), end: advance(dataString.endIndex, -1)));
+            self.passwordOrErrorLabel.text = Encryption.decrypt(dataString);
+            self.passwordOrErrorLabel.hidden = false;
+            self.copyButton.hidden = false;
+            UIPasteboard.generalPasteboard().string = self.passwordOrErrorLabel.text;
+            self.waitIndicator.hidden = true;
+            self.waitIndicator.stopAnimating();
+        }
+        task.resume();
     }
     
     @IBAction func copyPassword(sender: AnyObject) {
