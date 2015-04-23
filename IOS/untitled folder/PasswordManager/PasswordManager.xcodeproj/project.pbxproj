@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F520E9601AE13FF700F467AC /* RandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F520E95F1AE13FF700F467AC /* RandomString.swift */; };
+		F520E9621AE3AA1E00F467AC /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = F520E9611AE3AA1E00F467AC /* Case.swift */; };
 		F52B34871ADF048900C19A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B34861ADF048900C19A62 /* AppDelegate.swift */; };
 		F52B34891ADF048900C19A62 /* GenerateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B34881ADF048900C19A62 /* GenerateController.swift */; };
 		F52B348C1ADF048900C19A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52B348A1ADF048900C19A62 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F520E95F1AE13FF700F467AC /* RandomString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomString.swift; sourceTree = "<group>"; };
+		F520E9611AE3AA1E00F467AC /* Case.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 		F52B34811ADF048900C19A62 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52B34851ADF048900C19A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52B34861ADF048900C19A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				F5D58A2C1AE0348400175E76 /* FullListTableViewController.swift */,
 				F5D58A2E1AE05B4100175E76 /* PasswordTableViewCell.swift */,
 				F5D58A301AE0DCDC00175E76 /* Encryption.swift */,
+				F520E95F1AE13FF700F467AC /* RandomString.swift */,
+				F520E9611AE3AA1E00F467AC /* Case.swift */,
 			);
 			path = PasswordManager;
 			sourceTree = "<group>";
@@ -226,11 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5D58A311AE0DCDC00175E76 /* Encryption.swift in Sources */,
+				F520E9621AE3AA1E00F467AC /* Case.swift in Sources */,
 				F5D58A2F1AE05B4100175E76 /* PasswordTableViewCell.swift in Sources */,
 				F5D58A2B1AE023BD00175E76 /* FindController.swift in Sources */,
 				F52B34891ADF048900C19A62 /* GenerateController.swift in Sources */,
 				F5D58A2D1AE0348400175E76 /* FullListTableViewController.swift in Sources */,
 				F52B34871ADF048900C19A62 /* AppDelegate.swift in Sources */,
+				F520E9601AE13FF700F467AC /* RandomString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

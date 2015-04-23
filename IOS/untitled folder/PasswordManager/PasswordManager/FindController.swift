@@ -44,7 +44,14 @@ class FindController: UIViewController {
         task.resume();
     }
     
+    @IBAction func clearField(sender: AnyObject) {
+        self.nameTextField.text = "";gg
+        self.passwordOrErrorLabel.hidden = true;
+        self.copyButton.hidden = true;
+    }
+    
     @IBAction func copyPassword(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = self.passwordOrErrorLabel.text;
+        println(self.passwordOrErrorLabel.text);
     }
 }

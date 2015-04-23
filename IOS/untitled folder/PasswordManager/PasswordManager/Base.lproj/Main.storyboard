@@ -25,11 +25,12 @@
                                     <action selector="generate:" destination="GDF-mg-dmF" eventType="touchUpInside" id="4p8-FL-gOm"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example: Facebook" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-D9-eWV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example: Facebook" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-D9-eWV">
                                 <rect key="frame" x="180" y="28" width="495" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="clearField:" destination="GDF-mg-dmF" eventType="touchUpInside" id="pW2-eX-Gpx"/>
                                     <action selector="generate:" destination="GDF-mg-dmF" eventType="editingDidEndOnExit" id="rDe-re-cQb"/>
                                     <action selector="nameTextBoxValueChanged:" destination="GDF-mg-dmF" eventType="valueChanged" id="g5f-kn-XT4"/>
                                     <action selector="nameTextBoxValueChanged:" destination="GDF-mg-dmF" eventType="editingChanged" id="sIb-oM-thl"/>
@@ -55,11 +56,14 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tz5-Pc-j3L">
                                 <rect key="frame" x="180" y="104" width="51" height="31"/>
+                                <connections>
+                                    <action selector="specialCharactersSwitchValueChanged:" destination="GDF-mg-dmF" eventType="valueChanged" id="31O-TT-uN6"/>
+                                </connections>
                             </switch>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-88-c4F">
                                 <rect key="frame" x="581" y="66" width="94" height="29"/>
                             </stepper>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="n24-Kf-yD0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="n24-Kf-yD0">
                                 <rect key="frame" x="180" y="143" width="495" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
@@ -73,27 +77,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Including:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-hG-Q5y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Including:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-hG-Q5y">
                                 <rect key="frame" x="16" y="147" width="156" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excluding:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-xx-qub">
-                                <rect key="frame" x="16" y="185" width="156" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eKb-Xb-cLk">
-                                <rect key="frame" x="180" y="181" width="495" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
-                                <connections>
-                                    <action selector="didEndOnExit:" destination="GDF-mg-dmF" eventType="editingDidEndOnExit" id="lCd-Y3-ieq"/>
-                                </connections>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generated Password or Error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-qQ-Aoh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generated Password or Error" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-qQ-Aoh">
                                 <rect key="frame" x="16" y="501" width="687" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -117,11 +107,30 @@
                                     <action selector="copyPassword:" destination="GDF-mg-dmF" eventType="touchUpInside" id="kpe-JI-bQG"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="K8p-JL-uBd">
+                                <rect key="frame" x="374" y="502" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excluding:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-xx-qub">
+                                <rect key="frame" x="16" y="147" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="eKb-Xb-cLk">
+                                <rect key="frame" x="180" y="143" width="495" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <action selector="didEndOnExit:" destination="GDF-mg-dmF" eventType="editingDidEndOnExit" id="lCd-Y3-ieq"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Um1-88-c4F"/>
+                                <exclude reference="n24-Kf-yD0"/>
+                                <exclude reference="qCX-hG-Q5y"/>
                             </mask>
                         </variation>
                     </view>
@@ -136,11 +145,13 @@
                         <outlet property="lengthTextField" destination="zLb-ip-Gy0" id="5oC-BO-H9a"/>
                         <outlet property="nameTextField" destination="Rh5-D9-eWV" id="gRC-yk-aw3"/>
                         <outlet property="passwordOrErrorLabel" destination="Xoj-qQ-Aoh" id="5yg-42-AoJ"/>
+                        <outlet property="specialCharactersSwitch" destination="Tz5-Pc-j3L" id="UCI-tD-beM"/>
+                        <outlet property="waitIndicator" destination="K8p-JL-uBd" id="b0Y-Bu-M3U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exL-MN-7gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171" y="1169"/>
+            <point key="canvasLocation" x="1171" y="1111"/>
         </scene>
         <!--Password Finder-->
         <scene sceneID="TOb-yk-R7A">
@@ -168,11 +179,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="clearField:" destination="5l4-o4-4QB" eventType="editingDidBegin" id="HYA-gl-M6d"/>
+                                    <action selector="clearField:" destination="5l4-o4-4QB" eventType="touchUpInside" id="QzA-aF-CmD"/>
                                     <action selector="find:" destination="5l4-o4-4QB" eventType="editingDidEndOnExit" id="XxG-5Y-bNM"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Found Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVj-34-2ux">
-                                <rect key="frame" x="16" y="501" width="350" height="21"/>
+                                <rect key="frame" x="16" y="501" width="682" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
